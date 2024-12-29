@@ -46,10 +46,10 @@ public class StoryController : MonoBehaviour
         
         stories.Add("FOUND_RECIPE_POST_BATTLE", foundRecipePostBattleStorySegment);
         
-        CallStory("FOUND_RECIPE_POST_BATTLE", (storyId) =>
+        /*CallStory("FOUND_RECIPE_POST_BATTLE", (storyId) =>
         {
             Debug.Log(storyId);
-        });
+        });*/
     }
 
     // Update is called once per frame
