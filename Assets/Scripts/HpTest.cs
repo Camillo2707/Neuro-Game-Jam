@@ -25,6 +25,8 @@ public class HpTest : MonoBehaviour
 
     async void OnDeath()
     {
-        Application.Quit();
+        var res = SceneManager.LoadSceneAsync("Dead Scene", LoadSceneMode.Single);
+        res.allowSceneActivation = true;
+        await res;
     }
 }

@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Battle View.unity
     guid: 6f26ee9fb411ad044b73b12de28cbfc4
+  - enabled: 1
+    path: Assets/Scenes/Dead Scene.unity
+    guid: b7c151e970bfc194d9ab663a30788882
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

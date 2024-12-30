@@ -11,10 +11,13 @@ public class MainMenuController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startButton = GameObject.Find("StartButton").GetComponent<Button>();
-        startButton.onClick.AddListener(OnClickStartGame);
-        
-        endButton = GameObject.Find("CloseButton").GetComponent<Button>();
+        if (startButton != null)
+        {
+            startButton = startButton.GetComponent<Button>();
+            startButton.onClick.AddListener(OnClickStartGame);
+        }
+
+        endButton = endButton.GetComponent<Button>();
         endButton.onClick.AddListener(OnClickExitGame);
     }
 
