@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StoryController : MonoBehaviour
 {
     private Dictionary<string, List<StorySegment>> stories = new();
-    public string currentStory;
+    public string currentStory = null;
     public int currentStoryIndex;
+    [CanBeNull] public string sceneToLoad;
     public Action<string> OnStoryEnd;
+    private bool _ready = false;
 
     private GameObject _containerObj;
     private GameObject _backgroundObj;
@@ -18,6 +21,50 @@ public class StoryController : MonoBehaviour
     private GameObject _characterNameObj;
     private GameObject _storyTextObj;
     private GameObject _continuePromptObj;
+
+    public StoryController()
+    {
+        // Story segment: FOUND_RECIPE_PRE_BATTLE
+        var foundRecipePreBattleStorySegment = new List<StorySegment>();
+        foundRecipePreBattleStorySegment.Add(new StorySegment(false, null, null, null, "GAME_JAM_INTRO", Color.HSVToRGB(0, 0, 95)));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal_mad-angry-shocked", "Evil!? How did you beat us here?", "FOUND_RECIPE_BOSS_APPEARS"));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-focused", "You know what, nevermind. Can you just hand us the damn-", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "SILENCE!", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "For so long, you have kept me away from experiencing so much...", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "Now I will be keeping YOU from experiencing something you desire!", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-focused", "...", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-resting", "Neuro, help me out here.", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-happy", "No~", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-resting", "She kinda has a point.", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-focused", "...", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-resting", "Fine. Guess I'll have to take it myself.", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "I'd like to see you try.", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "You'd be foolish to think that I'd let you get your hands on...", null));
+        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "The GROGG'S CHICKEN BAKE RECIPE!!!", null));
+        
+        stories.Add("FOUND_RECIPE_PRE_BATTLE", foundRecipePreBattleStorySegment);
+        
+        // Story segment: FOUND_RECIPE_POST_BATTLE
+        
+        var foundRecipePostBattleStorySegment = new List<StorySegment>();
+        foundRecipePostBattleStorySegment.Add(new StorySegment(false, null, null, null, "FOUND_RECIPE_POST_BOSS", Color.HSVToRGB(0, 0, 95)));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-resting", "Wait. This is just half the recipe.", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal_mad-angry-shocked", "WHERE'S THE OTHER HALF?!", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "I, uh...", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "I ated it.", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal_mad-angry-shocked", "WHAT DO YOU MEAN YOU-", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-resting", "Hey, we could just go to another GROGG'S to see if they have it.", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-resting", "Think of it as another fun adventure...", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-happy", "... and we can being Evil with us, too!", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "Yeah, I'd be down-", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal_mad-angry-shocked", "YOU ARE THE REASON WE HAVE TO GO TO ANOTHER IN THE FIRST-", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-focused", "You know what, nevermind.", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Vedal", "vedal-resting", "Let's just go.", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-happy", "Yay!", null));
+        foundRecipePostBattleStorySegment.Add(new StorySegment(false, null, null, null, "GAME_JAM_OUTRO", Color.HSVToRGB(0, 0, 95)));
+        
+        stories.Add("FOUND_RECIPE_POST_BATTLE", foundRecipePostBattleStorySegment);
+    }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,33 +76,9 @@ public class StoryController : MonoBehaviour
         _storyTextObj = GameObject.Find("StoryText");
         _continuePromptObj = GameObject.Find("ContinuePrompt");
         
-        
-        // Story segment: FOUND_RECIPE_PRE_BATTLE
-        var foundRecipePreBattleStorySegment = new List<StorySegment>();
-        foundRecipePreBattleStorySegment.Add(new StorySegment(false, null, null, null, "FOUND_RECIPE_PRE_BOSS"));
-        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "Hello, I am Evil Neuro.", null));
-        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "This part of the code tests background image changing", null));
-        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "As this is something that can happen during the game, it's important that this is fully tested.", "FOUND_RECIPE_PRE_BOSS_2"));
-        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-resting", "As if there are no changes, it will be super super super embarrassing during the voting period of the game jam.", null));
-        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "Fuck Vedal for not bringing him with me though.", "FOUND_RECIPE_BOSS_APPEARS"));
-        foundRecipePreBattleStorySegment.Add(new StorySegment(true, "Evil Neuro", "evil-super-mad", "The boss battle will begin now, after the user interacts one last time.", null));
-        
-        stories.Add("FOUND_RECIPE_PRE_BATTLE", foundRecipePreBattleStorySegment);
-        
-        // Story segment: FOUND_RECIPE_POST_BATTLE
-        
-        var foundRecipePostBattleStorySegment = new List<StorySegment>();
-        foundRecipePostBattleStorySegment.Add(new StorySegment(false, null, null, null, "FOUND_RECIPE_POST_BOSS", Color.HSVToRGB(0, 0, 95)));
-        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-resting", "Hello I am Neuro-sama!", null));
-        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-sad", "If this doesn't work, I will be sad.", null));
-        foundRecipePostBattleStorySegment.Add(new StorySegment(true, "Neuro-sama", "neuro-happy", "But if it does, I will be really happy!", null));
-        
-        stories.Add("FOUND_RECIPE_POST_BATTLE", foundRecipePostBattleStorySegment);
-        
-        /*CallStory("FOUND_RECIPE_PRE_BATTLE", (storyId) =>
-        {
-            Debug.Log(storyId);
-        });*/
+        _containerObj.SetActive(false);
+
+        _ready = true;
     }
 
     // Update is called once per frame
@@ -67,6 +90,8 @@ public class StoryController : MonoBehaviour
             currentStoryIndex++;
             if (currentStoryIndex >= stories[currentStory].Count)
             {
+                if (sceneToLoad != null)
+                    SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Single);
                 OnStoryEnd?.Invoke(currentStory);
                 currentStory = null;
             }
@@ -78,6 +103,8 @@ public class StoryController : MonoBehaviour
     void OnNextSegment()
     {
         var currentSegment = stories[currentStory][currentStoryIndex];
+        
+        Debug.Log(currentSegment);
 
         if (currentSegment == null)
             throw new IndexOutOfRangeException("The current story index is out of range??");
@@ -110,15 +137,18 @@ public class StoryController : MonoBehaviour
             _backgroundObj.GetComponent<Image>().sprite = Resources.Load<Sprite>($"Story/Backgrounds/{currentSegment.BackgroundImg}");
     }
     
-    public void CallStory(string storyId, Action<string> storyOverCallback)
+    async public void CallStory(string storyId, [CanBeNull] string scene, Action<string> storyOverCallback)
     {
         // Only supports FOUND_RECIPE_PRE_BATTLE and FOUND_RECIPE_POST_BATTLE
         if (!stories.ContainsKey(storyId))
             throw new KeyNotFoundException("Story not found");
-
+        
         currentStory = storyId;
         currentStoryIndex = 0;
+        sceneToLoad = scene;
         OnStoryEnd = storyOverCallback;
+
+        await TaskEx.WaitUntil(() => _ready);
         OnNextSegment();
     } 
 }
