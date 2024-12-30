@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: ffde4d12761c9024382baed6ee83b7f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7136877191984401494
+    second: Vedal Programming Magic Spritesheet_0
+  - first:
+      213: 1475483102874977790
+    second: Vedal Programming Magic Spritesheet_1
+  - first:
+      213: 1600036192942252186
+    second: Vedal Programming Magic Spritesheet_2
+  - first:
+      213: -3508567636496317142
+    second: Vedal Programming Magic Spritesheet_3
+  - first:
+      213: -1129050584615985064
+    second: Vedal Programming Magic Spritesheet_4
+  - first:
+      213: 3708341712563183091
+    second: Vedal Programming Magic Spritesheet_5
+  - first:
+      213: -4793275981709015382
+    second: Vedal Programming Magic Spritesheet_6
+  - first:
+      213: -2073522138834414653
+    second: Vedal Programming Magic Spritesheet_7
+  - first:
+      213: -976735892447593666
+    second: Vedal Programming Magic Spritesheet_8
+  - first:
+      213: 6141394181468329537
+    second: Vedal Programming Magic Spritesheet_9
+  - first:
+      213: 8454635107071724003
+    second: Vedal Programming Magic Spritesheet_10
+  - first:
+      213: 2442057788029313604
+    second: Vedal Programming Magic Spritesheet_11
+  - first:
+      213: -3136441332450713711
+    second: Vedal Programming Magic Spritesheet_12
+  - first:
+      213: 4885426137084146927
+    second: Vedal Programming Magic Spritesheet_13
+  - first:
+      213: 6168725497039136648
+    second: Vedal Programming Magic Spritesheet_14
+  - first:
+      213: 1492818584089595688
+    second: Vedal Programming Magic Spritesheet_15
+  - first:
+      213: 1103697300642395818
+    second: Vedal Programming Magic Spritesheet_16
+  - first:
+      213: 7150167362512055643
+    second: Vedal Programming Magic Spritesheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 648
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3be26b108b4fc90800000000000000
+      internalID: -7136877191984401494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 0
+        width: 648
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef544fa8018f97410800000000000000
+      internalID: 1475483102874977790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 0
+        width: 648
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90671ca078743610800000000000000
+      internalID: 1600036192942252186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 5017
+        y: 0
+        width: 920
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a258434e2501f4fc0800000000000000
+      internalID: -3508567636496317142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 6649
+        y: 0
+        width: 1257
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850648aa97ec450f0800000000000000
+      internalID: -1129050584615985064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 8281
+        y: 0
+        width: 1463
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa682d7f3ecda7db0800000000000000
+      internalID: -4793275981709015382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 9913
+        y: 0
+        width: 1456
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e98e86d5d5e45570800000000000000
+      internalID: 8454635107071724003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vedal Programming Magic Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 11545
+        y: 0
+        width: 784
+        height: 1017
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f1c68c93f1974d0800000000000000
+      internalID: -3136441332450713711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a81f3ed2ba89b8948ad3f92857388e67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vedal Programming Magic Spritesheet_0: -7136877191984401494
+      Vedal Programming Magic Spritesheet_1: 1475483102874977790
+      Vedal Programming Magic Spritesheet_10: 8454635107071724003
+      Vedal Programming Magic Spritesheet_11: 2442057788029313604
+      Vedal Programming Magic Spritesheet_12: -3136441332450713711
+      Vedal Programming Magic Spritesheet_13: 4885426137084146927
+      Vedal Programming Magic Spritesheet_14: 6168725497039136648
+      Vedal Programming Magic Spritesheet_15: 1492818584089595688
+      Vedal Programming Magic Spritesheet_16: 1103697300642395818
+      Vedal Programming Magic Spritesheet_17: 7150167362512055643
+      Vedal Programming Magic Spritesheet_2: 1600036192942252186
+      Vedal Programming Magic Spritesheet_3: -3508567636496317142
+      Vedal Programming Magic Spritesheet_4: -1129050584615985064
+      Vedal Programming Magic Spritesheet_5: 3708341712563183091
+      Vedal Programming Magic Spritesheet_6: -4793275981709015382
+      Vedal Programming Magic Spritesheet_7: -2073522138834414653
+      Vedal Programming Magic Spritesheet_8: -976735892447593666
+      Vedal Programming Magic Spritesheet_9: 6141394181468329537
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

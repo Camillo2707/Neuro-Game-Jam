@@ -1,49 +1,31 @@
 fileFormatVersion: 2
-guid: cee528f17d3ae90fcb19fec6f35816a2
+guid: 0f78f830f588597438a3f0cd3cdbb122
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 627075495781331270
-    second: vedal-idle_0
+      213: 4122955902552972486
+    second: Evil Harpoon Attack Spritesheet_0
   - first:
-      213: -666332133321703401
-    second: vedal-idle_1
+      213: 1839323617792490339
+    second: Evil Harpoon Attack Spritesheet_1
   - first:
-      213: 7365075217277802686
-    second: vedal-idle_2
+      213: 7386643316473820572
+    second: Evil Harpoon Attack Spritesheet_2
   - first:
-      213: -5037778776097408502
-    second: vedal-idle_3
+      213: 1559504082271481176
+    second: Evil Harpoon Attack Spritesheet_3
   - first:
-      213: -5911745485919061090
-    second: vedal-idle_4
+      213: 7918093016948148655
+    second: Evil Harpoon Attack Spritesheet_4
   - first:
-      213: 5335630434562357255
-    second: vedal-idle_5
+      213: 7939954285376351831
+    second: Evil Harpoon Attack Spritesheet_5
   - first:
-      213: -4914010630056749437
-    second: vedal-idle_6
+      213: -8460886003671003863
+    second: Evil Harpoon Attack Spritesheet_6
   - first:
-      213: -7720186233715465423
-    second: vedal-idle_7
-  - first:
-      213: 8424666080645751049
-    second: vedal-idle_8
-  - first:
-      213: -6636986191160051137
-    second: vedal-idle_9
-  - first:
-      213: -6456283519715184747
-    second: vedal-idle_10
-  - first:
-      213: 6269335764714035677
-    second: vedal-idle_11
-  - first:
-      213: -8716838118154649722
-    second: vedal-idle_12
-  - first:
-      213: -7911431337392249516
-    second: vedal-idle_13
+      213: -7082660833077909132
+    second: Evil Harpoon Attack Spritesheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -135,150 +117,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vedal-idle_0
+      name: Evil Harpoon Attack Spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 640
-        height: 640
+        width: 840
+        height: 1052
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9d073468301688959b8dcaa7ab9ef3cb
-      internalID: -1478449871
+      spriteID: 6cc154c8c8ea73930800000000000000
+      internalID: 4122955902552972486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vedal-idle_1
+      name: Evil Harpoon Attack Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 640
+        x: 2092
         y: 0
-        width: 640
-        height: 640
+        width: 926
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c5387612a0e7dfb3c920a872eed4bb46
-      internalID: 1682730148
+      spriteID: 36bf181d517968910800000000000000
+      internalID: 1839323617792490339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vedal-idle_2
+      name: Evil Harpoon Attack Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 4204
         y: 0
-        width: 640
-        height: 640
+        width: 1567
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 64f5bd979537609a78a1feed908e5806
-      internalID: 692645109
+      spriteID: c957fe0d5f0a28660800000000000000
+      internalID: 7386643316473820572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vedal-idle_3
+      name: Evil Harpoon Attack Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 6316
         y: 0
-        width: 640
-        height: 640
+        width: 2095
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 03aa703c2b5910957b3889ffde9f210b
-      internalID: 227289828
+      spriteID: fa902b5a5a7b2ed60800000000000000
+      internalID: 7918093016948148655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vedal-idle_4
+      name: Evil Harpoon Attack Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 8428
         y: 0
-        width: 640
-        height: 640
+        width: 761
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5f39abe4593334b11be8df02216c7070
-      internalID: 1122921459
+      spriteID: 92d8d12e105e49a80800000000000000
+      internalID: -8460886003671003863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vedal-idle_5
+      name: Evil Harpoon Attack Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 10540
         y: 0
-        width: 640
-        height: 640
+        width: 761
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c38d8bd958f856f9e9417235e3f792a6
-      internalID: -105985711
+      spriteID: 479a1d37f7555bd90800000000000000
+      internalID: -7082660833077909132
       vertices: []
       indices: 
       edges: []
@@ -287,7 +256,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 99cf70e6eab31f146b0f8a839779a27a
+    spriteID: 939d6b9874e745c4da5769874fa0be1a
     internalID: 0
     vertices: []
     indices: 
@@ -297,12 +266,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vedal-idle_0: -1478449871
-      vedal-idle_1: 1682730148
-      vedal-idle_2: 692645109
-      vedal-idle_3: 227289828
-      vedal-idle_4: 1122921459
-      vedal-idle_5: -105985711
+      Evil Harpoon Attack Spritesheet_0: 4122955902552972486
+      Evil Harpoon Attack Spritesheet_1: 1839323617792490339
+      Evil Harpoon Attack Spritesheet_2: 7386643316473820572
+      Evil Harpoon Attack Spritesheet_3: 1559504082271481176
+      Evil Harpoon Attack Spritesheet_4: 7918093016948148655
+      Evil Harpoon Attack Spritesheet_5: 7939954285376351831
+      Evil Harpoon Attack Spritesheet_6: -8460886003671003863
+      Evil Harpoon Attack Spritesheet_7: -7082660833077909132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

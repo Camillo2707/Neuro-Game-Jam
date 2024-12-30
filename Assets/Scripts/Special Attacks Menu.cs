@@ -9,7 +9,7 @@ public class SpecialAttacksMenu : MonoBehaviour
     public GameObject BackButton;
     public GameObject Attack;
     public GameObject SpecialAttackMenu2;
-    public GameObject Items;
+    
 
     public void SpecialAttackMenu()
     {
@@ -19,7 +19,7 @@ public class SpecialAttacksMenu : MonoBehaviour
         BackButton.SetActive(true);
         Attack.SetActive(false);
         SpecialAttackMenu2.SetActive(false);
-        Items.SetActive(false);
+        
     }
 
     public void LeaveMenu()
@@ -30,7 +30,7 @@ public class SpecialAttacksMenu : MonoBehaviour
         BackButton.SetActive(false);
         Attack.SetActive(true);
         SpecialAttackMenu2.SetActive(true);
-        Items.SetActive(true);
+        
     }
 
     void Start()

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vedal-focused_0: 4635403543772967458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

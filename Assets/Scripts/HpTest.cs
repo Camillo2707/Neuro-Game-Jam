@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class HpTest : MonoBehaviour
 {
-    public int hp;
+    public static int hp = 100;
     public TMP_Text hpText;
     void Start()
     {
@@ -15,5 +15,9 @@ public class HpTest : MonoBehaviour
     void Update()
     {
         hpText.SetText("HP: "+ hp);
+        if (hp <= 0)
+        {
+            Application.Quit();
+        }
     }
 }

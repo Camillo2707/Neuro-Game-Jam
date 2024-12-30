@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FOUND_RECIPE_BOSS_APPEARS_0: -6042767857603733304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

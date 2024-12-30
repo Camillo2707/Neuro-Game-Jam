@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ProgrammerPointsTest : MonoBehaviour
 {
-    public int pp;
+    public static int pp = 15;
     public TMP_Text ppText;
    
     void Start()
