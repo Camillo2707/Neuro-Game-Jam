@@ -18,9 +18,8 @@ public class TurnOrder : MonoBehaviour
     public void Attack()
     {
         
-        AttackButton.SetActive(false);
-        SpecialAttack.SetActive(false);
-        BossHP.HPBoss = BossHP.HPBoss - 15;
+
+        BossHP.HPBoss = BossHP.HPBoss - 25;
         EnemyAttacks.EnemyAttack();
         AnimationController.NormalAttackAnimation();
     }

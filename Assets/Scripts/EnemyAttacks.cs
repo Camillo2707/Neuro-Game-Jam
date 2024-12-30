@@ -3,9 +3,12 @@ using UnityEngine;
 public class EnemyAttacks : MonoBehaviour
 {
     public static int attack;
+    public AnimationController Animation;
+    
     
     public static void EnemyAttack()
     {
+        
         attack = Random.Range(1, 5);
         Debug.Log(attack);
 

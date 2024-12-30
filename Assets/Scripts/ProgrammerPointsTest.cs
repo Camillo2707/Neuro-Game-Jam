@@ -14,6 +14,6 @@ public class ProgrammerPointsTest : MonoBehaviour
 
     void Update()
     {
-        ppText.SetText("PP: " + pp);
+        ppText.SetText("Programmer Points(PP): " + pp);
     }
 }
