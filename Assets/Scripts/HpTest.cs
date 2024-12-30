@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HpTest : MonoBehaviour
@@ -14,10 +15,16 @@ public class HpTest : MonoBehaviour
     
     void Update()
     {
-        hpText.SetText("HP: "+ hp);
         if (hp <= 0)
         {
-            Application.Quit();
+            hp = 0;
+            OnDeath();
         }
+        hpText.SetText("HP: "+ hp);
+    }
+
+    async void OnDeath()
+    {
+        Application.Quit();
     }
 }

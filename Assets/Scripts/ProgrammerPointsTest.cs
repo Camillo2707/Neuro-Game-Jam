@@ -14,6 +14,10 @@ public class ProgrammerPointsTest : MonoBehaviour
 
     void Update()
     {
+        if (pp <= 0)
+        {
+            pp = 0;
+        }
         ppText.SetText("Programmer Points(PP): " + pp);
     }
 }
